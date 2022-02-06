@@ -1,0 +1,235 @@
+body{
+    font-family: cursive;
+    background-image: url("img/bg.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 60%;
+}
+.navbar{
+    background-color: #563d7c;
+}
+footer{
+    background-color: #563d7c;
+}
+.space
+{
+    height: 50px;
+}
+.sectionHead
+{
+    width: 220px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.color{
+    transition: 1s;
+}
+.word{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.sectionHead:hover .color{
+    box-shadow: 0 0 0 300px rgb(97, 15, 97);
+}
+.sectionHead:hover .word{
+    color: white;
+}
+.sectionBody{
+    background-color: rgba(255, 255, 255, .7);
+}
+#conversation .cphoto{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(3,320px);
+    justify-content: space-evenly;
+}
+.cphoto img{
+    width: 350px;
+    height: 280px;
+}
+.insta{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-content: space-evenly;
+}
+#conversation .insta img{
+    width: 350px;
+}
+#songs .sectionBody{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    font-size: 20px;
+}
+#games .sectionBody{
+    display: flex;
+    justify-content: center;
+}
+#games .sectionBody img{
+    width: 250px;
+    height: 250px;
+}
+#english img{
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: auto;
+}
+#turkish img{
+    width: 850px;
+    height: 800px;
+    display: block;
+    margin: auto;
+}
+#quraan img{
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: auto;
+}
+.mainimg{
+    display: block;
+    margin: 0 auto 15px;
+    width: 939px;
+    height: 483px;
+}
+.tp{
+    margin: auto;
+    width: 89%;
+    display: grid;
+    grid-template-columns: repeat(3,240px);
+    justify-content: space-evenly;
+}
+.tp img{
+    width: 240px;
+    height: 450px;   
+    margin-bottom: 15px;
+}
+.thp{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-content: space-evenly;
+}
+.thp img{
+    width: 350px;
+    height: 300px;   
+    margin-bottom: 15px;
+}
+.headphoto{
+    width: 450px;
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+
+
+@media screen and (max-width:426px) 
+{
+    body{
+        background-image: url("img/mbg.jpeg");
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+    }
+    .space{
+        height: 20px;
+    }
+    #songs .sectionBody{
+        padding: 15px;
+        grid-template-columns: repeat(1, 100%);
+        font-size: 20px;
+    }
+    .navbar{
+        background-color: #563d7c;
+    }
+    .sectionHead
+    {
+        width: 180px;
+        height: 50px;
+    }
+    .color{
+        transition: 1s;
+    }
+    .word{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    #conversation .cphoto{
+        grid-template-columns: repeat(2,140px);
+        grid-template-rows: repeat(5,140px);
+        justify-content: space-between;
+    }
+    .cphoto img{
+        width: 140px;
+        height: 130px;
+    }
+    .insta{
+        display: none;
+    }
+    #games .sectionBody{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #games .sectionBody img{
+        width: 130px;
+        height: 130px;
+        margin-bottom: 5px;
+    }
+    #english img{
+        width: 200px;
+        height: 200px;
+    }
+    #turkish img{
+        width: 280px;
+        height: 300px;
+    }
+    #quraan img{
+        width: 200px;
+        height: 200px;
+    }
+    .mainimg{
+        width: 250px;
+        height: 150px;
+    }
+    .tp{
+        margin: auto;
+        width: 89%;
+        display: grid;
+        grid-template-columns: repeat(3,83px);
+        justify-content: space-evenly;
+    }
+    .tp img{
+        width: 83px;
+        height: 150px;   
+        margin-bottom: 15px;
+    }
+    .thp{
+        grid-template-columns: repeat(3,90px);
+    }
+    .thp img{
+        width: 90px;
+        height: 80px;   
+    }
+    .headphoto{
+        width: 250px;
+        height: 140px;
+    }
+
+    
+}
